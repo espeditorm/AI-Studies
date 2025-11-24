@@ -20,20 +20,20 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-brand-950/80 backdrop-blur-md border-b border-brand-200 dark:border-brand-800">
       <div className="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="p-1.5 bg-brand-900 dark:bg-white rounded-lg flex-shrink-0">
+          <div className="p-1.5 bg-brand-900 dark:bg-white rounded-lg">
             <Terminal className="w-5 h-5 text-white dark:text-brand-900" />
           </div>
-          <span className="font-bold text-sm md:text-lg tracking-tight text-brand-900 dark:text-white leading-tight">
-            Playbook de apoio às aulas de Espedito Roza
+          <span className="font-bold text-lg tracking-tight text-brand-900 dark:text-white">
+            AI.Playbook
           </span>
         </div>
         <button
           onClick={toggleTheme}
-          className="flex items-center gap-2 px-3 py-2 rounded-lg text-brand-500 hover:bg-brand-100 dark:hover:bg-brand-800 transition-colors flex-shrink-0"
+          className="flex items-center gap-2 px-3 py-2 rounded-lg text-brand-500 hover:bg-brand-100 dark:hover:bg-brand-800 transition-colors"
           aria-label="Toggle theme"
         >
           {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-          <span className="text-sm font-medium hidden sm:inline">Mudar tema</span>
+          <span className="text-sm font-medium">Mudar tema</span>
         </button>
       </div>
     </header>
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-brand-600 uppercase bg-brand-100 rounded-full dark:bg-brand-900 dark:text-brand-300">
-          Material de Apoio
+          Manual de Instruções v1.0
         </span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand-900 dark:text-white leading-tight mb-6">
           Prototipação & Prompt Engineering. <br className="hidden md:block" />
@@ -165,7 +165,7 @@ const Content: React.FC = () => {
       <StepCard
         number={4}
         title="Execução no Agente Criador"
-        description="Esta é a etapa final. Os prompt gerados por sua IA conversacional, sejam eles 3, 4, ou apenas 1 devem ser copiados e colados em ordem no Lovable, Google AI Studio, Figma Make ou V0."
+        description="Esta é a etapa final. O ChatGPT (Passo 3) gerou prompts específicos como resposta. Agora você deve copiar essa resposta e colar no Lovable, Bolt.new ou V0."
       >
         <div className="flex items-center gap-3 p-4 bg-brand-900 dark:bg-brand-100 rounded-xl mb-8 shadow-md">
           <div className="p-2 bg-brand-800 dark:bg-white rounded-lg">
